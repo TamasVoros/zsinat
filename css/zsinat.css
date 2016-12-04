@@ -79,26 +79,51 @@ hr.small {
   font-weight: 800;
 }
 .navbar-custom .navbar-header .navbar-toggle {
-  color: #777777;
+  color: rgb(43, 43, 43);
+  background-color: rgba(131, 68, 122, 0.7);
+  border: 2px solid rgb(81, 157, 152);
+  border-radius: 1px;
   font-weight: 800;
   text-transform: uppercase;
   font-size: 12px;
 }
+.navbar-custom .navbar-header .navbar-toggle:hover,
+.navbar-custom .navbar-header .navbar-toggle:focus {
+  color: rgb(254, 254, 254);
+}
 .navbar-custom .nav li a {
+  color: rgb(43, 43, 43);
   text-transform: uppercase;
   font-size: 12px;
   font-weight: 800;
   letter-spacing: 1px;
 }
+.navbar-custom .nav li a:hover,
+.navbar-custom .nav li a:focus {
+  color: rgb(254, 254, 254);
+}
+/*changing small media navbar*/
+.navbar-default {
+  background-color: rgba(208, 128, 196, 0.25);
+  border: none;
+}
+.navbar-default .navbar-brand {
+  color: rgb(43, 43, 43);
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus{
+  color: rgb(254, 254, 254);
+}
+
+
 @media only screen and (min-width: 768px) {
   .navbar-custom {
     background:  rgba(208, 128, 196, 0.25);
-    border-bottom: 1px solid transparent;
+    border-bottom: 2px solid rgb(81, 157, 152);
   }
   .navbar-custom .navbar-brand {
     color: rgb(43, 43, 43);
     padding: 20px;
-
   }
   .navbar-custom .navbar-brand:hover,
   .navbar-custom .navbar-brand:focus {
