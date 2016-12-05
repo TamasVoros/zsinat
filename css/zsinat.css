@@ -110,8 +110,8 @@ hr.small {
 .navbar-default .navbar-brand {
   color: rgb(43, 43, 43);
 }
-.navbar-default .navbar-brand:hover,
-.navbar-default .navbar-brand:focus{
+.navbar-default .navbar-brand a:hover,
+.navbar-default .navbar-brand a:focus{
   color: rgb(254, 254, 254);
   background: transparent;
 }
