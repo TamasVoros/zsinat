@@ -47,8 +47,7 @@ h6 {
 a {
   color: #2b2b2b;
 }
-a:hover,
-a:focus {
+a:hover{
   color: rgb(81, 157, 152);
 }
 a img:hover,
@@ -80,7 +79,7 @@ hr.small {
 }
 .navbar-custom .navbar-header .navbar-toggle {
   color: rgb(43, 43, 43);
-  background-color: rgba(131, 68, 122, 0.7);
+  background-color: rgba(131, 68, 122, 0.6);
   border: 2px solid rgb(81, 157, 152);
   border-radius: 1px;
   font-weight: 800;
@@ -94,7 +93,7 @@ hr.small {
 .navbar-custom .nav li a {
   color: rgb(43, 43, 43);
   text-transform: uppercase;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 800;
   letter-spacing: 1px;
 }
@@ -104,21 +103,25 @@ hr.small {
 }
 /*changing small media navbar*/
 .navbar-default {
-  background-color: rgba(208, 128, 196, 0.25);
-  border: none;
+  background-color: rgba(208, 128, 196, .6);
+  border-bottom: 2px solid rgb(81, 157, 152);
+
 }
 .navbar-default .navbar-brand {
   color: rgb(43, 43, 43);
 }
-.navbar-default .navbar-brand:hover,
-.navbar-default .navbar-brand:focus{
+.navbar-default .navbar-brand:hover{
   color: rgb(254, 254, 254);
 }
-
-
+/*primary: rgb(208, 128, 196);
+priamry_dark: rgb(131, 68, 122);
+secondary: rgb(81, 157, 152);
+secondary_dark: rgb(74, 131, 128);
+middle: rgb(216, 204, 154);
+*/
 @media only screen and (min-width: 768px) {
   .navbar-custom {
-    background:  rgba(208, 128, 196, 0.25);
+    background:  rgba(208, 128, 196, 0.6);
     border-bottom: 2px solid rgb(81, 157, 152);
   }
   .navbar-custom .navbar-brand {
@@ -156,8 +159,8 @@ hr.small {
     /* when the user scrolls down, we hide the header right above the viewport */
     position: fixed;
     top: -61px;
-    background-color: rgba(208, 128, 196, 0.45);;
-    border-bottom: none;
+    background-color: rgba(208, 128, 196, 0.6);;
+    border-bottom: 2px solid rgb(81, 157, 152);
     -webkit-transition: -webkit-transform 0.3s;
     -moz-transition: -moz-transform 0.3s;
     transition: transform 0.3s;
@@ -205,10 +208,16 @@ hr.small {
   color: white;
 }
 @media only screen and (min-width: 768px) {
+  .intro-header {
+    height: 600px;
+  }
+}
+@media only screen and (min-width: 768px) {
   .intro-header .site-heading,
   .intro-header .post-heading,
   .intro-header .page-heading {
     padding: 150px 0;
+
   }
 }
 .intro-header .site-heading,
