@@ -49,7 +49,7 @@ a {
 }
 a:hover,
 a:focus{
-  color: rgb(254, 254, 254);
+  color: rgb(92, 92, 92);
 }
 a img:hover,
 a img:focus {
@@ -114,6 +114,12 @@ hr.small {
 .navbar-default .navbar-brand:focus{
   color: rgb(254, 254, 254);
 }
+.navbar-default .navbar-brand img{
+    vertical-align: middle;
+    height: auto;
+    width: 130px;
+    cursor: pointer;
+  }
 /*primary: rgb(208, 128, 196);
 priamry_dark: rgb(131, 68, 122);
 secondary: rgb(81, 157, 152);
@@ -125,9 +131,11 @@ middle: rgb(216, 204, 154);
     background:  rgba(208, 128, 196, 0.6);
     border-bottom: 2px solid rgb(81, 157, 152);
   }
-  .navbar-custom .navbar-brand {
-    color: rgb(43, 43, 43);
-    padding: 20px;
+  .navbar-custom .navbar-brand img{
+    vertical-align: middle;
+    height: auto;
+    width: 150px;
+    cursor: pointer;
   }
   .navbar-custom .navbar-brand:hover,
   .navbar-custom .navbar-brand:focus {
