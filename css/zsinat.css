@@ -25,11 +25,12 @@ white_hoover: rgb(254, 254, 254);
 /*GENERAL shit*/
 }
 body {
-  font-family: 'Roboto', 'Times New Roman', sans-serif;
+  font-family: 'Roboto Mono', 'Roboto', 'Times New Roman', sans-serif;
   font-size: 20px;
   color: #2b2b2b;
 }
 p {
+  font-family: 'Roboto Mono';
   line-height: 1.5;
   margin: 30px 0;
 }
