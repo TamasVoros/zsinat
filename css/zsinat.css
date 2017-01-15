@@ -1,6 +1,5 @@
 /*!
- * Start Bootstrap - Clean Blog v3.3.7+1 (http://startbootstrap.com/template-overviews/clean-blog)
- * Copyright 2013-2016 Start Bootstrap
+ * Based on Bootsrap Clean Blog template
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
  */
 
@@ -25,17 +24,18 @@ white_hoover: rgb(254, 254, 254);
 /*GENERAL shit*/
 }
 body {
-  font-family: 'Roboto Mono', 'Roboto', 'Times New Roman', sans-serif;
+  font-family: 'Roboto Mono', monospace;
   font-size: 20px;
   color: #2b2b2b;
 }
 p {
-  font-family: 'Roboto Mono';
-  line-height: 1.5;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.4;
   margin: 30px 0;
+  text-align: ;
 }
 p a {
-  text-decoration: underline;
+  text-decoration: none;
 }
 h1,
 h2,
@@ -51,8 +51,27 @@ a {
 }
 a:hover,
 a:focus{
-  color: rgb(92, 92, 92);
+  text-decoration: none;
 }
+
+/* sima kiemelés a szövegben és link kiemelése a szövegben */
+
+.span-text {
+  background-color: rgba(208, 128, 196, 0.6);
+  border-left: 5px solid rgba(74, 131, 128, 1);
+}
+.span-link {
+  text-decoration: none;
+  color: rgba(74, 131, 128, 1);
+  border: 3px solid rgba(74, 131, 128, 1);
+}
+.span-link:hover,
+.span-link:focus {
+  background-color: rgba(208, 128, 196, 0.7);
+  text-decoration: none;
+  border: 3px solid rgba(74, 131, 128, 1);
+}
+
 a img:hover,
 a img:focus {
   cursor: zoom-in;
@@ -256,6 +275,9 @@ middle: rgb(216, 204, 154);
     font-size: 80px;
     text-transform: uppercase;
    }
+  p {
+    font-size: 1.5em;
+  }
 }
 
 
