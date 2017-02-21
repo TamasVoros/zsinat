@@ -55,6 +55,7 @@ a:focus{
   text-decoration: none;
 }
 
+
 /* sima kiemelés a szövegben és link kiemelése a szövegben */
 
 .span-text {
@@ -505,7 +506,16 @@ background-color: rgba(43, 43, 43, 0.6);
   padding: 1px;
 }
 
-
+article ul {
+  padding: 0 30px 0 30px;
+}
+article li {
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.9em;
+  list-style: none;
+  border-left: 5px solid rgba(81, 157, 152, 0.8);
+  padding: 10px 10px;
+}
 /* footer shit*/
 .pre-footer {
   border: 0;
