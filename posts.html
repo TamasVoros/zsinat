@@ -2,7 +2,6 @@
 <html lang="en">
 
 <head>
-    <meta name="robots" content="noindex, nofollow">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -30,7 +29,11 @@
     <![endif]-->
 
     <!--tab picture aka favicon-->
-   <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+
+    <!--Masonry for grid-->
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+
 
 </head>
 
@@ -91,7 +94,12 @@
     <!--MAIN CONTENT-->
     <div class="grid">
         <div class="container">
-
+            <div class="grid">
+  <div class="grid-item">...</div>
+  <div class="grid-item grid-item--width2">...</div>
+  <div class="grid-item">...</div>
+  ...
+</div>
 
 
 
