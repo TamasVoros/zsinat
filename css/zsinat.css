@@ -660,3 +660,26 @@ img::-moz-selection {
 body {
   -webkit-tap-highlight-color: rgba(255, 255, 255, 0.0);
 }
+
+
+/*adding Masonry yeeah*/
+
+.grid {
+  max-width:;
+}
+.grid-item {
+  width: 300px;
+}
+
+.grid-item--width2{
+  width: 400px;
+}
+
+.mason-post {
+ width: inherit;
+ text-decoration: none;
+ cursor: pointer;
+}
+.mason-post-place {
+  
+}
