@@ -17,7 +17,7 @@ jQuery(document).ready(function($) {
     if ($(window).width() > MQL) {
         var headerHeight = $('.navbar-custom').height();
         $(window).on('scroll', {
-                previousTop: 0
+                previousTop: 1
             },
             function() {
                 var currentTop = $(window).scrollTop();
