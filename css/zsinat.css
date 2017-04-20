@@ -192,7 +192,7 @@ hr.small {
   .navbar-custom.is-fixed {
     /* when the user scrolls down, we hide the header right above the viewport */
     position: fixed;
-    top: -61px;
+    top: -60px;
     background-color: rgba(208, 128, 196, 0.6);;
     border-bottom: 2px solid rgb(81, 157, 152);
     -webkit-transition: -webkit-transform 0.3s;
@@ -215,11 +215,11 @@ hr.small {
   }
   .navbar-custom.is-visible {
     /* if the user changes the scrolling direction, we show the header */
-    -webkit-transform: translate3d(0, 100%, 0);
-    -moz-transform: translate3d(0, 100%, 0);
-    -ms-transform: translate3d(0, 100%, 0);
-    -o-transform: translate3d(0, 100%, 0);
-    transform: translate3d(0, 100%, 0);
+    -webkit-transform: translate3d(0, 60px, 0);
+    -moz-transform: translate3d(0, 60px, 0);
+    -ms-transform: translate3d(0, 60px, 0);
+    -o-transform: translate3d(0, 60px, 0);
+    transform: translate3d(0, 60px, 0);
   }
 }
 
