@@ -31,8 +31,6 @@
     <!--tab picture aka favicon-->
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
 
-    <!--Masonry for grid-->
-    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
 
     <!--Google Analytics-->
     <script>
@@ -102,24 +100,7 @@
         </div>
     </header>
     <!--MAIN CONTENT-->
-    <div class="posts-grid">
-        <div class="container">
-            
-        </div>
-    </div>
-
-
-
-
-    <div class="grid">
-        <div class="grid-item">
-            <a class="mason-post">
-            <img class="mason-post" src="posts/20170228/Fioka_1.jpg">
-            <h3 class="mason-post-place">Fióka</h3>
-            </a>
-        </div>
-        <div class="grid-item"><img class="mason-post" src="posts/20170228/Fioka_2.jpg"></div>
-        <div class="grid-item">...</div>
+    <div class="container">
     </div>
 
 
@@ -259,9 +240,25 @@
     <!-- Theme JavaScript -->
     <script src="js/clean-blog.min.js"></script>
 
-    <!-- Masonry JavaScript -->
-    <script src="vendor/masonry/masonry.pkgd.min.js"></script>
+    <!-- Isotope JavaScript -->
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <script src="vendor/isotope/isotope.pkgd.min.js"></script>
+    <script src="vendor/isotope/imagesloaded.pkgd.min.js"></script>
 
+    
+    <script>
+        // init Isotope after all images have loaded
+        var $grid = $('.grid').imagesLoaded( function() {
+            $grid.isotope({
+                itemSelector: '.grid-item',
+                percentPosition: true,
+                masonry: {
+                    columnWidth: '.grid-sizer'
+                }
+            });
+        });
+    </script>
+    
 </body>
 
 </html>
