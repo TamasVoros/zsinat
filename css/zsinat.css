@@ -664,22 +664,41 @@ body {
 
 /*adding Masonry yeeah*/
 
+* { box-sizing: border-box; }
+
+/* force scrollbar */
+html { overflow-y: scroll; }
+
+body {
+  font-family: sans-serif;
+}
+
+/* ---- isotope ---- */
+
 .grid {
-  max-width:;
+  background: #DDD;
 }
+
+/* clear fix */
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* ---- .grid-item ---- */
+
+.grid-sizer,
 .grid-item {
-  width: 300px;
+  width: 33.333%;
 }
 
-.grid-item--width2{
-  width: 400px;
+.grid-item {
+  float: left;
 }
 
-.mason-post {
- width: inherit;
- text-decoration: none;
- cursor: pointer;
-}
-.mason-post-place {
-  
+.grid-item img {
+  display: block;
+  max-width: 100%;
+  vertical-align: initial;
 }
